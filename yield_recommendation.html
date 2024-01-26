@@ -1,0 +1,264 @@
+
+
+<style>
+    html body {
+      background-image: url('https://eu-images.contentstack.com/v3/assets/bltdd43779342bd9107/blt7ce917f0e3918c50/638f2d3069b13001e4b459c6/corn-harvest-583629188.jpg');
+      background-repeat: no-repeat;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    *{
+      padding: 3px;
+    }
+  </style>
+  <!--Form Section-->
+  <br /><br />
+  <h2 style="text-align: center; margin: 0px; font-size:40px ; color: black">
+    <b>I will tell you how much yield is produced across various districts</b>
+  </h2>
+  <br />
+  
+  <div
+    style="
+      width: 350px;
+      height: 40rem;
+      margin: 0px auto;
+      color: black;
+      border-radius: 25px;
+      padding: 10px;
+      font-family: sans-serif;
+      font-size: 20px;
+      font-style: italic;
+    "
+  >
+    <form method="POST" action="fertilizer_prediction.html">
+      <!-- <div class="form-group">
+        <label for="ph" style="font-size: 17px"><b>ph level</b></label>
+        <input
+          type="text"
+          class="form-control"
+          id="ph"
+          name="ph"
+          placeholder="Enter the value"
+          style="font-weight: bold"
+          required
+        />
+      </div> -->
+      <div class="form-group">
+        <label for="state" style="font-size: 17px"
+          ><b>State</b></label
+        >
+        <select
+          name="statename"
+          class="form-control"
+          id="state"
+          style="font-weight: bold"
+          required
+        >
+          <option selected>select</option>
+          <option>Andhra Pradesh</option>
+          <!-- <option>maize</option>
+          <option>chickpea</option>
+          <option>kidneybeans</option>
+          <option>pigeonpeas</option>
+          <option>mothbeans</option>
+          <option>mungbean</option>
+          <option>blackgram</option>
+          <option>lentil</option>
+          <option>pomegranate</option>
+          <option>banana</option>
+          <option>mango</option>
+          <option>grapes</option>
+          <option>watermelon</option>
+          <option>muskmelon</option>
+          <option>apple</option>
+          <option>orange</option>
+          <option>papaya</option>
+          <option>coconut</option>
+          <option>cotton</option>
+          <option>jute</option>
+          <option>coffee</option> -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="Districts" style="font-size: 17px"><b>Districts</b></label>
+        <select
+          name="District_name"
+          class="form-control"
+          id="District"
+          style="font-weight: bold"
+          required
+        >
+          <option selected>select</option>
+          <option>Srikakulam</option>
+          <!-- <option>Parvathipuram Manyam</option> -->
+          <option>Vizianagaram	</option>
+          <option>Visakhapatnam</option>
+          <option>krishna</option>
+          <option>Kadapa</option>
+          <!-- <option>Alluri Sitharama Raju</option> -->
+          <!-- <option>Anakapalli</option>
+          <option>Kakinada</option> -->
+          <option>East Godavari	</option>
+          <!-- <option>Dr.B.R.Ambedkar Konaseema</option>
+          <option>Eluru</option> -->
+          <option>West Godavari</option>
+          <!-- <option>NTR</option>
+          <option>Palnadu</option> -->
+          <option>Guntur</option>
+          <!-- <option>Bapatla</option> -->
+          <option>Prakasam</option>
+          <!-- <option>Sri Potti Sriramulu Nellore</option> -->
+          <option>Kurnool</option>
+          <!-- <option>Nandyal</option> -->
+          <option>Anantapur</option>
+          <!-- <option>Sri Sathya Sai</option>
+          <option>YSR</option>
+          <option>Annamayya</option>
+          <option>Tirupati</option> -->
+          <option>Chittoor</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="crop_year" style="font-size: 17px"><b>crop_year</b></label>
+        <!-- <select
+          name="crop_eyear"
+          class="form-control"
+          id="crop_year"
+          style="font-weight: bold"
+          required
+        > -->
+        <input
+            type="number"
+            class="form-control"
+            id="Temperature"
+            name="ph"
+            placeholder="Enter year"
+            style="font-weight: bold"
+            required
+      />
+      </div>
+
+      <div class="form-group">
+        <label for="Season" style="font-size: 17px"><b>season</b></label>
+        <select
+          name="season"
+          class="form-control"
+          id="season"
+          style="font-weight: bold"
+          required
+        >
+        <option selected>select</option>
+          <option>Kharif</option>
+          <option>Rabi</option>
+          <option>Autumn</option>
+          <option>whole year</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="crop" style="font-size: 17px"><b>crop</b></label>
+        <select
+          name="cropname"
+          class="form-control"
+          id="crop"
+          style="font-weight: bold"
+          required
+        >
+          <option selected>select</option>
+          <option>Bajra</option>
+          <option>Dry chillies</option>
+          <option>Horse-gram</option>
+          <option>Moong</option>
+          <option>Ragi</option>
+          <option>Sunflower</option>
+          <option>Tobacco</option>
+          <option>Jowar</option>
+          <option>Arhar/Tur</option>
+          <option>wheat</option>
+          <option>Sesamum</option>
+          <option>Onion</option>
+          <option>Linseed</option>
+          <option>Korra</option>
+          <option>coriander</option>
+          <option>sweet potato</option>
+          <option>Banana</option>
+          <option>Castor seed</option>
+          <option>Cow pea</option>
+          <option>Brinjal</option>
+          <option>Cabbage</option>
+          <option>Cashew nut</option>
+          <option>Sapota</option>
+          <option>Samai</option>
+          <option>Small millets</option>
+          <option>Cuccumber</option>
+          <option>Beans</option>
+          <option>potato</option>
+          <option>Soya bean</option>
+          <option>maize</option>
+          <option>chickpea</option>
+          <option>kidneybeans</option>
+          <option>pigeonpeas</option>
+          <option>mothbeans</option>
+          <option>mungbean</option>
+          <option>blackgram</option>
+          <option>lentil</option>
+          <option>pomegranate</option>
+          <option>banana</option>
+          <option>mango</option>
+          <option>grapes</option>
+          <option>watermelon</option>
+          <option>muskmelon</option>
+          <option>apple</option>
+          <option>orange</option>
+          <option>papaya</option>
+          <option>coconut</option>
+          <option>cotton</option>
+          <option>jute</option>
+          <option>coffee</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="area" style="font-size: 17px"><b>Area</b></label>
+        <!-- <select
+          name="crop_eyear"
+          class="form-control"
+          id="crop_year"
+          style="font-weight: bold"
+          required
+        > -->
+        <input
+            type="number"
+            class="form-control"
+            id="Areae"
+            name="Area"
+            placeholder="Enter area"
+            style="font-weight: bold"
+            required
+      />
+      </div>
+  
+      <div class="d-flex justify-content-center">
+        <button
+          type="submit"
+          class="btn btn-info"
+          style="
+            color: black;
+            font-weight: bold;
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            font-size: 15px;
+          "
+        >
+          Predict
+        </button>
+      </div>
+    </form>
+  </div>
+  
